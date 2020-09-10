@@ -20,8 +20,8 @@ Folder PATH listing in your Apache
 ---------------------------
 
 Add File in backend :.env
-Adding in .env : database name
-Add in env :JWT_SECRET=
+Add in .env : database name
+Add in .env :JWT_SECRET=
 ---------------------------
 # Run the following command:
 
