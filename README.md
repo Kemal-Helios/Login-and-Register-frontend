@@ -4,12 +4,8 @@ backend : https://github.com/Kemal-Helios/Login-and-Register-backend/tree/master
 
 Folder PATH listing in your Apache
 
-+------Login-and-Register------------
-|					                          |
-|>>>>>	+---backend Files #Laravel	|
-|					                          |
-|>>>>>	+---frontend Files #Nuxt	  |
--------------------------------------
++------Login-and-Register >>>>>	+---backend Files #Laravel.
++------Login-and-Register >>>>>+---frontend Files #Nuxt
 
 ## Build Setup
 
