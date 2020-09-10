@@ -1,15 +1,18 @@
 # client
 Login and Register By Laravel 7 backend and nuxt.js frontend with style vuesax-4 and bootstrap-4
 backend : https://github.com/Kemal-Helios/Login-and-Register-backend/tree/master/backend
-## Build Setup
+
 Folder PATH listing in your Apache
 
-+------Login-and-Register----------------
-|					|
++------Login-and-Register------------
+|					                          |
 |>>>>>	+---backend Files #Laravel	|
-|					|
-|>>>>>	+---frontend Files #Nuxt	|
------------------------------------------
+|					                          |
+|>>>>>	+---frontend Files #Nuxt	  |
+-------------------------------------
+
+## Build Setup
+
 
 ```bash
 # install dependencies
