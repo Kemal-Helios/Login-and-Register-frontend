@@ -39,8 +39,4 @@ Before: middleware: 'auth',
 
 After: middleware: 'guest',
 ---------------------------
-# And edit in layouts/partials/TopNav. Transferred from <template v-if="authenticated">  to  <template v-else> 
-
-<vs-navbar-item class="nav-item">
-	<nuxt-link class="nav-link res-link" to="/auth/register">Register</nuxt-link>
-</vs-navbar-item>
+# And edit in layouts/partials/TopNav. Transferred Register from template v-if="authenticated"  to  template v-else 
