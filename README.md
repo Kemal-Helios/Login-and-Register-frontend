@@ -1,28 +1,46 @@
-# Login-and-Register
-Login and Register By Laravel 7 backend and nuxt.js frontend with style vuesax-4 and bootstrap-4
+# Login-and-Register API
+Login and Register By Laravel 7 and jwt backend and nuxt.js frontend with style vuesax-4 and bootstrap-4 
 backend : https://github.com/Kemal-Helios/Login-and-Register-backend/tree/master/backend
+## Build Setup
 
 Folder PATH listing in your Apache
 
 +--Login-and-Register >>>>>backend Files #Laravel.
-+--Login-and-Register >>>>>frontend Files #Nuxt
++--Login-and-Register >>>>>frontend Files #Nuxt.
 
-## Build Setup
+#Frontend files separate from backend
 
+# Run the following command:
 
-```bash
-# install dependencies
-$ npm install
+-1 npm update 
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+-2 composer update
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+-3 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+---------------------------
 
-# generate static project
-$ npm run generate
-```
+Add File in backend :.env
+Adding in .env : database name
+Add in env :JWT_SECRET=
+---------------------------
+# Run the following command:
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+-3 php artisan jwt:secret
+
+-4 php artisan migrate:fresh
+
+-4 npm run dev
+
+-5 php artisan serve
+---------------------------
+# Register a new Admin You must modify in pages/auth/register 
+
+Before: middleware: 'auth',
+
+After: middleware: 'guest',
+---------------------------
+# And edit in layouts/partials/TopNav. Transferred from <template v-if="authenticated">  to  <template v-else> 
+
+<vs-navbar-item class="nav-item">
+	<nuxt-link class="nav-link res-link" to="/auth/register">Register</nuxt-link>
+</vs-navbar-item>
