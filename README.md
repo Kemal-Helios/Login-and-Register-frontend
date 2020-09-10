@@ -1,7 +1,7 @@
 # Login-and-Register API 
 # it version 1.0.0
 Login and Register By Laravel 7 and jwt backend and nuxt.js frontend with style vuesax-4 and bootstrap-4 
-backend : https://github.com/Kemal-Helios/Login-and-Register-backend/tree/master/backend
+backend : https://github.com/Kemal-Helios/Login-and-Register-backend
 ## Build Setup
 
 Folder PATH listing in your Apache
