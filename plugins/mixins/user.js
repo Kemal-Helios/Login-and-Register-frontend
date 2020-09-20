@@ -5,7 +5,7 @@ const User = {
   install(Vue, options) {
   Vue.mixin({
   computed: {
-    ...mapGetters("auth", {
+    ...mapGetters({
       user: "user",
       authenticated: "authenticated"
     })

@@ -1,5 +1,5 @@
 <template>
-<div class="container grid">
+<div class="container grid mt-cust">
     <template v-for="error in errors">
         <div class="notif-error">
             {{openNotification('top-left', 'warn',error[0])}}
@@ -7,7 +7,7 @@
     </template>
     <vs-row align="center" justify="center">
 
-        <vs-col w="6">
+        <vs-col w="8">
             <vs-card type="3">
                 <template #title>
                     <h3>Login</h3>
@@ -68,13 +68,6 @@ export default {
     mounted() {},
     methods: {
         async login() {
-            const config = {
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            }
-
-            let url = '/auth/login';
             let formData = {
                 email: this.email,
                 password: this.password
@@ -101,6 +94,10 @@ export default {
 </script>
 
 <style>
+.mt-cust {
+    margin-top: 10rem
+}
+
 h3 {
     padding: 0.75rem
 }

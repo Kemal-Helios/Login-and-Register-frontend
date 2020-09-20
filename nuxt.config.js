@@ -1,6 +1,9 @@
 export default {
-  
   /*
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://127.0.0.1:8000/api'
+  },
+    process.env.baseUrl
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
@@ -62,8 +65,8 @@ export default {
       local: {
         endpoints: {
           login: { url: '/auth/login', method: 'post', propertyName: 'token' },
-          logout: { url: '/auth/logout', method: 'get' },
-          user: { url: '/my', method: 'get', propertyName: 'data' }
+          logout: { url: '/logout', method: 'get' },
+          user: { url: '/admin-panel', method: 'get', propertyName: 'data' }
         },
          tokenRequired: true,
          tokenType: 'bearer',
@@ -88,6 +91,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+
   ],
   /*
   ** Nuxt.js modules
